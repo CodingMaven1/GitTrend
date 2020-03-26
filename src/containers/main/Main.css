@@ -220,7 +220,7 @@
         height: 3vh;
     }
     .Main--Logo{
-        height: 7vh;
+        height: 9vh;
     }
     .Main--LogoHeading{
         font-size: 1.2rem;
@@ -228,8 +228,12 @@
     .Main--LogoMotto{
         display: none;
     }
+    .Main--RepoSearch{
+        height: 20vh;
+    }
     .Main--RepoSearchWrapper{
         width: 98vw;
+        height: 20vh;
     }
     .Main--RepoSearchFilter{
         width: 70vw;
@@ -237,6 +241,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+        height: 20vh;
     }
     .Main--RepoSearchField{
         height: 5vh;
@@ -245,8 +250,12 @@
         align-items: center;
         justify-content: flex-start;
     }
+    .Main--TrendingSearch{
+        height: 20vh;
+    }
     .Main--TrendingSearchWrapper{
         width: 98vw;
+        height: 20vh;
     }
     .Main-TrendingSearchFilter {
         width: 70vw;
@@ -254,6 +263,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+        height: 20vh;
     }
     .Main--TrendingSearchLanguage{
         height: 5vh;
