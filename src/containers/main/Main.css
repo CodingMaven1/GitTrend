@@ -135,6 +135,8 @@
     padding-bottom: 7vh;
 }
 
+/* TRENDING SEARCH */
+
 .Main--TrendingSearch{
     width: 100vw;
     height: 15vh;
@@ -174,6 +176,8 @@
     justify-content: space-around;
 }
 
+/* REPO SEARCH */
+
 .Main--RepoSearch{
     width: 100vw;
     height: 15vh;
@@ -206,3 +210,99 @@
     justify-content: space-around;
 }
 
+@media(max-width: 576px){
+    .Main--LogoContainer{
+        width: 25vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .Main--LogoContainerContent{
+        height: 3vh;
+    }
+    .Main--Logo{
+        height: 7vh;
+    }
+    .Main--LogoHeading{
+        font-size: 1.2rem;
+    }
+    .Main--LogoMotto{
+        display: none;
+    }
+    .Main--RepoSearchWrapper{
+        width: 98vw;
+    }
+    .Main--RepoSearchFilter{
+        width: 70vw;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .Main--RepoSearchField{
+        height: 5vh;
+        width: 95%;
+        flex-direction: row;   
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .Main--TrendingSearchWrapper{
+        width: 98vw;
+    }
+    .Main-TrendingSearchFilter {
+        width: 70vw;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .Main--TrendingSearchLanguage{
+        height: 5vh;
+        width: 95%;
+        flex-direction: row;   
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .Main--TrendingSearchDuration {
+        height: 5vh;
+        width: 95%;
+        flex-direction: row;
+        align-items: center;
+    }
+    .Main--Select{
+        width: 50%;
+    }
+    .Main--Toggle {
+        font-size: 0.6rem;
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
+        align-items: center;
+    }
+    .Main--LanguageToggler{
+        font-size: 0.6rem;
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
+    }
+    .Main--Results{
+        font-size: 0.7rem;
+        padding: 0.4rem 0.6rem;
+    }
+    .Main--SearchField{
+        width: 33vw;
+    }
+    .Main--SearchField:placeholder-shown {
+        padding-left: 0.4rem;
+    }
+    .Main--SearchField{
+        font-size: 0.7rem;
+    }
+    .Main--SearchField::placeholder{
+        font-size: 0.6rem;
+    }
+    .Main--404{
+        font-size: 3rem;
+    }
+    
+    .Main--404text{
+        font-size: 1rem;
+    }
+}

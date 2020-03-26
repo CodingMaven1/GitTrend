@@ -163,7 +163,7 @@ class Main extends Component {
         }
         else if(this.state.languagePresent){
             languageSearch = <div className="Main--TrendingSearchLanguage">
-                            <Select options={this.state.optionsLanguage} onChange={event => this.onSelectHandler(event, "language")} />
+                            <Select className="Main--Select" options={this.state.optionsLanguage} placeholder="Language" onChange={event => this.onSelectHandler(event, "language")} />
                             <a className="Main--LanguageToggler" onClick={this.languageHandler}>Some Other Language?</a>
             </div>
         }
@@ -183,7 +183,7 @@ class Main extends Component {
                                     <div className="Main-TrendingSearchFilter">
                                         {languageSearch}
                                         <div className="Main--TrendingSearchDuration">
-                                            <Select options={this.state.options} onChange={event => this.onSelectHandler(event, "duration")} />
+                                            <Select placeholder="Duration" className="Main--Select" options={this.state.options} onChange={event => this.onSelectHandler(event, "duration")} />
                                             <a onClick={event => this.onToggleHandler(event,"reposearch")} className="Main--Toggle">Looking for a particular repo?</a>
                                         </div>
                                         <button onClick={event => this.onClickHandler(event,"trending")} className="Main--Results">Search</button> 
