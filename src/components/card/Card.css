@@ -1,0 +1,92 @@
+.Card{
+    height: 20vh;
+    width: 60vw;
+    display: flex;
+    background-color: #fff;
+    border-bottom: 1px solid #D8E2DC;
+
+}
+
+.Card:nth-child(1){
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.Card:last-child{
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.Card--Left{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Card--LeftImg{
+    height: 75%;
+    width: auto;
+    border-radius: 50%;
+    padding-top: 1rem;
+}
+
+.Card--LeftTag{
+    font-size: 1rem;
+    font-weight: 400;
+    display: flex;
+    min-width: 40%;
+    justify-content: space-around;
+}
+
+.Card--Right{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.Card--RightHeading{
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #EF626C;
+    padding-left: 2rem;
+}
+
+.Card--RightPara{
+    font-size: 1rem;
+    font-weight: 300;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.Card--RightStats{
+    height: 25%;
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Card--RightStatsBox{
+    height: 25%;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Card--RightStatsBoxImg{
+    height: 100%;
+    width: auto;
+}
+
+.Card--RightStatsBocStat{
+    font-size: 1rem;
+    font-weight: 400;
+}

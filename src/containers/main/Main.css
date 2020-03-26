@@ -1,0 +1,208 @@
+.Main{
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Main--RepoNotFound{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #EFF1F3;
+}
+
+.Main--404{
+    font-size: 5rem;
+}
+
+.Main--404text{
+    font-size: 2rem;
+}
+
+.Main--LanguageToggler{
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.Main--LanguageToggler:hover{
+    color: #EF626C;
+}
+
+.Main--Toggle{
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.Main--Toggle:hover{
+    color: #EF626C;
+}
+
+.Main--Results{
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid #000;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: 1s hover ease-out;
+    letter-spacing: 0.4px;
+    cursor: pointer;
+}
+
+.Main--Results:focus{
+    outline: none;
+}
+
+.Main--Results:hover{
+    background-color: #EF626C;
+    color: #fff;
+    border-color: #fff;
+}
+
+.Main--Logo{
+    height: 10vh;
+    width: auto;
+}
+
+.Main--LogoContainer{
+    height: 15vh;
+    width: 28vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Main--LogoContainerContent{
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.Main--LogoHeading{
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.Main--LogoMotto{
+    font-weight: 300;
+}
+
+.Main--SearchField{
+    height: 4vh;
+    width: 12vw;
+    border-radius: 5px;
+    background-color: #fafafa;
+    padding-left: 1rem;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Main--SearchField::placeholder{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #000;
+    letter-spacing: 1.44px;
+    font-weight: 400;
+}
+
+.Main--SearchField:focus{
+    outline: none;
+}
+
+.Main--SearchField:placeholder-shown{
+    padding-left: 1rem;
+}
+
+.Main--ReposList{
+    min-height: 85vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Main--RepoListContainer{
+    padding-top: 8vh;
+    padding-bottom: 7vh;
+}
+
+.Main--TrendingSearch{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EFF1F3;
+}
+
+.Main--TrendingSearchWrapper{
+    height: 15vh;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Main-TrendingSearchFilter{
+    height: 15vh;
+    width: 35vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Main--TrendingSearchLanguage{
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.Main--TrendingSearchDuration{
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.Main--RepoSearch{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EFF1F3;
+}
+
+.Main--RepoSearchWrapper{
+    height: 15vh;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Main--RepoSearchFilter{
+    height: 15vh;
+    width: 35vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Main--RepoSearchField{
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
