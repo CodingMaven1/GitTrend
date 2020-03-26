@@ -12,7 +12,6 @@ class Main extends Component {
         searchRepos: false,
         reposearch: "tetris",
         language: "javascript",
-        languagePresent: true,
         duration: "today",
         notfound: null,
         repolist: [],
@@ -24,30 +23,172 @@ class Main extends Component {
             { label: "Yearly", value: "Yearly" },
           ],
         optionsLanguage: [
-          { label: "Javascript", value: "Javascript" },
-          { label: "Python", value: "Python" },
-          { label: "Java", value: "Java" },
+          { label: "ABAP", value: "ABAP" },
+          { label: "ActionScript", value: "ActionScript" },
+          { label: "Ada", value: "Ada" },
+          { label: "Agda", value: "Agda" },
+          { label: "AGS", value: "AGS" },
+          { label: "Alloy", value: "Alloy" },
+          { label: "AMPL", value: "AMPL" },
+          { label: "ANTLR", value: "ANTLR" },
+          { label: "ApacheCong", value: "ApachConf" },
+          { label: "Apex", value: "Apex" },
+          { label: "API", value: "API" },
+          { label: "APL", value: "APL" },
+          { label: "AppleScript", value: "AppleScript" },
+          { label: "Arc", value: "Arc" },
+          { label: "Arduino", value: "Arduino" },
+          { label: "ASP", value: "ASP" },
+          { label: "AspectJ", value: "AspectJ" },
+          { label: "Assembly", value: "Assembly" },
+          { label: "ATS", value: "ATS" },
+          { label: "Augeus", value: "Augeus" },
+          { label: "AutoHotKey", value: "AutoHotKey" },
+          { label: "AutoIt", value: "AutoIt" },
+          { label: "Batchfile", value: "Batchfile" },
+          { label: "BlitzMax", value: "BlitzMax" },
+          { label: "Boo", value: "Boo" },
+          { label: "Brainfuck", value: "Brainfuck" },
+          { label: "Bro", value: "Bro" },
+          { label: "C", value: "C" },
           { label: "C++", value: "C++" },
-          { label: "PHP", value: "PHP" },
           { label: "C#", value: "Csharp" },
-          { label: "Shell", value: "Shell" },
-          { label: "Go", value: "GO" },
-          { label: "Typescript", value: "Typescript" },
-          { label: "Ruby", value: "Ruby" },
-          { label: "Swift", value: "Swift" },
-          { label: "Kotlin", value: "Kotlin" },
-          { label: "R", value: "R" },
-          { label: "Scala", value: "Scala" },
-          { label: "Rust", value: "Rust" },
-          { label: "Lua", value: "Lua" },
-          { label: "Matlab", value: "Matlab" },
-          { label: "PowerShell", value: "PowerShell" },
+          { label: "Cap", value: "Cap" },
+          { label: "Ceylon", value: "Ceylon" },
+          { label: "Chapel", value: "Chapel" },
+          { label: "Cirru", value: "Cirru" },
+          { label: "Clarion", value: "Clarion" },
+          { label: "Clean", value: "Clean" },
+          { label: "Click", value: "Closure" },
           { label: "CoffeeScript", value: "CoffeeScript" },
-          { label: "Perl", value: "Perl" },
-          { label: "Groovy", value: "Groovy" },
-          { label: "Haskell", value: "Haskell" },
-          { label: "HTML", value: "HTML" },
+          { label: "ColdFusion", value: "Coldfusion" },
+          { label: "Common", value: "Common" },
+          { label: "Component", value: "Component" },
+          { label: "Crystal", value: "Crystal" },
+          { label: "Cucumber", value: "Cucumber" },
           { label: "CSS", value: "CSS" },
+          { label: "Cuda", value: "Cuda" },
+          { label: "D", value: "D" },
+          { label: "Dart", value: "Dart" },
+          { label: "DIGITAL", value: "DIGITAL" },
+          { label: "DM", value: "DM" },
+          { label: "Dogescript", value: "Dogescript" },
+          { label: "Dylan", value: "Dylan" },
+          { label: "E", value: "E" },
+          { label: "eC", value: "eC" },
+          { label: "Eiffel", value: "Eiffel" },
+          { label: "ECL", value: "ECL" },
+          { label: "Elixir", value: "Elixir" },
+          { label: "Elm", value: "Elm" },
+          { label: "Emacs", value: "Emacs" },
+          { label: "Erlang", value: "Erlang" },
+          { label: "Emberscript", value: "Emberscript" },
+          { label: "F#", value: "F#" },
+          { label: "Factor", value: "Factor" },
+          { label: "Fancy", value: "Fancy" },
+          { label: "Fantom", value: "Fantom" },
+          { label: "FLUX", value: "FLUX" },
+          { label: "Forth", value: "Forth" },
+          { label: "FORTRAN", value: "FORTRAN" },
+          { label: "FreeMarker", value: "FreeMarker" },
+          { label: "Frege", value: "Frege" },
+          { label: "Game", value: "Game" },
+          { label: "GDScript", value: "GDScript" },
+          { label: "Gettext", value: "Gettext" },
+          { label: "Glyph", value: "Glyph" },
+          { label: "Gunplot", value: "Gunplot" },
+          { label: "Go", value: "GO" },
+          { label: "Golo", value: "Golo" },
+          { label: "Gosu", value: "Gosu" },
+          { label: "Grammatical", value: "Grammatical" },
+          { label: "Groff", value: "Groff" },
+          { label: "Groovy", value: "Groovy" },
+          { label: "Hack", value: "Hack" },
+          { label: "Harbour", value: "Harbour" },
+          { label: "Haskell", value: "Haskell" },
+          { label: "Haxe", value: "Haxe" },
+          { label: "HTML", value: "HTML" },
+          { label: "Hy", value: "Hy" },
+          { label: "IDL", value: "IDL" },
+          { label: "Idris", value: "Idris" },
+          { label: "IGOR", value: "IGOR" },
+          { label: "Inform", value: "Inform" },
+          { label: "Inno", value: "Inno" },
+          { label: "Io", value: "Io" },
+          { label: "Ioke", value: "Ioke" },
+          { label: "Isabelle", value: "Isabelle" },
+          { label: "J", value: "J" },
+          { label: "Java", value: "Java" },
+          { label: "JSONiq", value: "JSONiq" },
+          { label: "Julia", value: "Julia" },
+          { label: "Juptyer", value: "Jupyter" },
+          { label: "KiCad", value: "kiCad" },
+          { label: "Kotlin", value: "Kotlin" },
+          { label: "Krl", value: "Krl" },
+          { label: "Lasso", value: "Lasso" },
+          { label: "Lex", value: "Lex" },
+          { label: "LiveScript", value: "Livesrcipt" },
+          { label: "LLVM", value: "LLVM" },
+          { label: "LOLCODE", value: "LOLCODE" },
+          { label: "LookMl", value: "LookMl" },
+          { label: "LSL", value: "LSL" },
+          { label: "Lua", value: "Lua" },
+          { label: "Makefile", value: "Makefile" },
+          { label: "Mask", value: "Mask" },
+          { label: "Matlab", value: "Matlab" },
+          { label: "Max", value: "Max" },
+          { label: "MAXScript", value: "MAXScript" },
+          { label: "Mercury", value: "Mercury" },
+          { label: "Metal", value: "Metal" },
+          { label: "Mirah", value: "Mirah" },
+          { label: "MTML", value: "MTML" },
+          { label: "Module", value: "Module" },
+          { label: "Modula", value: "Modula" },
+          { label: "NCL", value: "NCL" },
+          { label: "Nemerle", value: "Nemerle" },
+          { label: "nesC", value: "nesC" },
+          { label: "NetLink", value: "Netlink" },
+          { label: "Netlogo", value: "Netlogo" },
+          { label: "NewLisp", value: "NewLisp" },
+          { label: "Nimrod", value: "Nimrod" },
+          { label: "Nit", value: "Nit" },
+          { label: "Nix", value: "Nix" },
+          { label: "Nu", value: "Nu" },
+          { label: "OCaml", value: "OCaml" },
+          { label: "ooc", value: "ooc" },
+          { label: "Opal", value: "Opal" },
+          { label: "Openedge", value: "Openedge" },
+          { label: "Oxygene", value: "Oxygene" },
+          { label: "Oz", value: "Oz" },
+          { label: "Pan", value: "Pan" },
+          { label: "Papyrus", value: "Papyrus" },
+          { label: "Parrot", value: "Parrot" },
+          { label: "Pascal", value: "Pascal" },
+          { label: "Pawn", value: "Pawn" },
+          { label: "Perl", value: "Perl" },
+          { label: "PHP", value: "PHP" },
+          { label: "Python", value: "Python" },
+          { label: "PowerShell", value: "PowerShell" },
+          { label: "Piglatin", value: "Piglatin" },
+          { label: "Pig", value: "Pig" },
+          { label: "PLSQL", value: "PLSQL" },
+          { label: "PogoScript", value: "PogoScript" },
+          { label: "PostScript", value: "PostScript" },
+          { label: "POV", value: "POV" },
+          { label: "Prolog", value: "Prolog" },
+          { label: "Puppet", value: "Puppet" },
+          { label: "PureBasic", value: "PureBasic" },
+          { label: "Pure", value: "Pure" },
+          { label: "PureScript", value: "Purescript" },
+          { label: "R", value: "R" },
+          { label: "Ragel", value: "Ragel" },
+          { label: "Racket", value: "Racket" },
+          { label: "Rust", value: "Rust" },
+          { label: "Ruby", value: "Ruby" },
+          { label: "Shell", value: "Shell" },
+          { label: "Swift", value: "Swift" },
+          { label: "Scala", value: "Scala" },
+          { label: "Typescript", value: "Typescript" },
         ]
       }
     
@@ -131,11 +272,6 @@ class Main extends Component {
             this.fetchData("reposearch")
         }
       }
-      
-      languageHandler = () => {
-          let languagePresent = this.state.languagePresent;
-          this.setState({languagePresent: !languagePresent})
-      }
 
       onToggleHandler = (event,type) => {
           event.preventDefault();
@@ -154,19 +290,10 @@ class Main extends Component {
         let languageSearch;
         let cards;
 
-        if(!this.state.languagePresent){
-            languageSearch = <div className="Main--TrendingSearchLanguage">
-                            <input type="search" className="Main--SearchField" onChange={event => this.onChangeHandler(event,"language")} placeholder="Type the language!" />
-                            <a className="Main--LanguageToggler" onClick={this.languageHandler}>Back</a>
-
-            </div> 
-        }
-        else if(this.state.languagePresent){
-            languageSearch = <div className="Main--TrendingSearchLanguage">
+        languageSearch = <div className="Main--TrendingSearchLanguage">
                             <Select className="Main--Select" options={this.state.optionsLanguage} placeholder="Language" onChange={event => this.onSelectHandler(event, "language")} />
-                            <a className="Main--LanguageToggler" onClick={this.languageHandler}>Some Other Language?</a>
-            </div>
-        }
+                        </div>
+
 
         if(this.state.trendingRepos){
             
@@ -184,9 +311,12 @@ class Main extends Component {
                                         {languageSearch}
                                         <div className="Main--TrendingSearchDuration">
                                             <Select placeholder="Duration" className="Main--Select" options={this.state.options} onChange={event => this.onSelectHandler(event, "duration")} />
-                                            <a onClick={event => this.onToggleHandler(event,"reposearch")} className="Main--Toggle">Looking for a particular repo?</a>
                                         </div>
-                                        <button onClick={event => this.onClickHandler(event,"trending")} className="Main--Results">Search</button> 
+                                        <div className="Main--Buttons">
+                                            <button onClick={event => this.onClickHandler(event,"trending")} className="Main--Results">Search</button> 
+                                            <a onClick={event => this.onToggleHandler(event,"reposearch")} className="Main--Results">Repo search</a>
+                                        </div>
+
                                     </div>
 
                                 </div>
@@ -221,10 +351,12 @@ class Main extends Component {
                                     <div className="Main--RepoSearchFilter">
                                         <div className="Main--RepoSearchField">
                                             <input type="search" className="Main--SearchField" onChange={event => this.onChangeHandler(event,"reposearch")} placeholder="Type (e.g. Tetris)" />
-                                            <a onClick={event => this.onToggleHandler(event,"trending")} className="Main--Toggle">Looking for trending repos?</a>
                                         </div>
                                         {languageSearch}
-                                        <button onClick={event => this.onClickHandler(event,"reposearch")} className="Main--Results">Search</button> 
+                                        <div className="Main--Buttons">
+                                            <button onClick={event => this.onClickHandler(event,"reposearch")} className="Main--Results">Search</button> 
+                                            <a onClick={event => this.onToggleHandler(event,"trending")} className="Main--Results">Trending Repos</a>  
+                                        </div>
                                     </div>
 
                                 </div>

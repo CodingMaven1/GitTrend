@@ -8,6 +8,16 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.Main--Buttons{
+    width: 20vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Main--Select{
+    width: 10vw;
+}
+
 .Main--RepoNotFound{
     display: flex;
     flex-direction: column;
@@ -21,25 +31,6 @@
 
 .Main--404text{
     font-size: 2rem;
-}
-
-.Main--LanguageToggler{
-    font-size: 1rem;
-    cursor: pointer;
-    text-align: center;
-}
-
-.Main--LanguageToggler:hover{
-    color: #EF626C;
-}
-
-.Main--Toggle{
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.Main--Toggle:hover{
-    color: #EF626C;
 }
 
 .Main--Results{
@@ -156,7 +147,7 @@
 
 .Main-TrendingSearchFilter{
     height: 15vh;
-    width: 35vw;
+    width: 45vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -197,7 +188,7 @@
 
 .Main--RepoSearchFilter{
     height: 15vh;
-    width: 35vw;
+    width: 45vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -248,7 +239,6 @@
         width: 95%;
         flex-direction: row;   
         align-items: center;
-        justify-content: flex-start;
     }
     .Main--TrendingSearch{
         height: 20vh;
@@ -270,7 +260,6 @@
         width: 95%;
         flex-direction: row;   
         align-items: center;
-        justify-content: flex-start;
     }
     .Main--TrendingSearchDuration {
         height: 5vh;
@@ -279,40 +268,31 @@
         align-items: center;
     }
     .Main--Select{
-        width: 50%;
-    }
-    .Main--Toggle {
-        font-size: 0.6rem;
-        padding-left: 0.4rem;
-        padding-right: 0.4rem;
-        align-items: center;
-    }
-    .Main--LanguageToggler{
-        font-size: 0.6rem;
-        padding-left: 0.4rem;
-        padding-right: 0.4rem;
+        width: 70%;
     }
     .Main--Results{
         font-size: 0.7rem;
         padding: 0.4rem 0.6rem;
     }
     .Main--SearchField{
-        width: 33vw;
+        width: 46vw;
     }
     .Main--SearchField:placeholder-shown {
         padding-left: 0.4rem;
     }
     .Main--SearchField{
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
     .Main--SearchField::placeholder{
-        font-size: 0.6rem;
+        font-size: 1rem;
     }
     .Main--404{
         font-size: 3rem;
     }
-    
     .Main--404text{
         font-size: 1rem;
+    }
+    .Main--Buttons{
+        width: 50vw;
     }
 }
