@@ -7,16 +7,6 @@
 
 }
 
-.Card:nth-child(1){
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-}
-
-.Card:last-child{
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-}
-
 .Card--Left{
     height: 100%;
     width: 20%;
@@ -79,6 +69,8 @@
     padding-right: 2rem;
     overflow-y: scroll;
 }
+
+.Card--RightPara::-webkit-scrollbar { width: 0 !important }
 
 .Card--RightStats{
     height: 25%;

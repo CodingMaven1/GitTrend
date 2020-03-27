@@ -31,7 +31,7 @@ class Main extends Component {
           { label: "Alloy", value: "Alloy" },
           { label: "AMPL", value: "AMPL" },
           { label: "ANTLR", value: "ANTLR" },
-          { label: "ApacheCong", value: "ApachConf" },
+          { label: "ApacheConf", value: "ApachConf" },
           { label: "Apex", value: "Apex" },
           { label: "API", value: "API" },
           { label: "APL", value: "APL" },
@@ -276,7 +276,7 @@ class Main extends Component {
       onToggleHandler = (event,type) => {
           event.preventDefault();
           if(type === "reposearch"){
-              this.setState({ trendingRepos : false, searchRepos: true })
+              this.setState({ trendingRepos : false, searchRepos: true})
               this.fetchData("reposearch")
           }
           else if(type === "trending"){
@@ -286,9 +286,10 @@ class Main extends Component {
 
     render(){
 
-        let contentSearch;
-        let languageSearch;
-        let cards;
+        let contentSearch, languageSearch, cards, text;
+
+        text = <h1 className="Main--Text">Dislaying the trennding repositories on github.</h1>
+   
 
         languageSearch = <div className="Main--TrendingSearchLanguage">
                             <Select className="Main--Select" options={this.state.optionsLanguage} placeholder="Language" onChange={event => this.onSelectHandler(event, "language")} />
@@ -326,8 +327,10 @@ class Main extends Component {
                                 <h1 className="Main--404">404</h1>
                                 <h2 className="Main--404text">No Repositories Found!</h2>
                         </div>
+                    text = <h1></h1>
                 }
             else{
+                text = <h1 className="Main--Text">Displaying the trending repositories in {this.state.language}</h1>
                 cards =  this.state.repolist.map(repo => {
                     return(
                         <Card key={repo.url} href={repo.avatar} lang={repo.language} url={repo.url} author={repo.author} repoName={repo.name} 
@@ -365,9 +368,11 @@ class Main extends Component {
                 cards = <div className="Main--RepoNotFound">
                                 <h1 className="Main--404">404</h1>
                                 <h2 className="Main--404text">No Repositories Found!</h2>
-                        </div>            
+                        </div>  
+                text = <h1></h1>          
                 }
             else{
+                text = <h1 className="Main--Text">Displaying the best repositories for {this.state.reposearch} in {this.state.language}</h1>
                 cards = this.state.searchrepolist["items"].map(repo => {
                     return(
                         <Card key={repo.id} href={repo.owner.avatar_url} lang={repo.language} url={repo.owner.html_url} author={repo.owner.login} repoName={repo.name}
@@ -382,6 +387,7 @@ class Main extends Component {
                 {contentSearch}
                 <div className="Main--ReposList">
                     <div className="Main--RepoListContainer">
+                        {text}
                         {cards}
                     </div>
                 </div>

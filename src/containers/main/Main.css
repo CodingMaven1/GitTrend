@@ -8,6 +8,12 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.Main--Text{
+    color: #EFF1F3;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
 .Main--Buttons{
     width: 20vw;
     display: flex;
@@ -122,8 +128,11 @@
 }
 
 .Main--RepoListContainer{
-    padding-top: 8vh;
     padding-bottom: 7vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 /* TRENDING SEARCH */
@@ -294,5 +303,9 @@
     }
     .Main--Buttons{
         width: 50vw;
+    }
+    .Main--Text {
+        font-size: 1.4rem;
+        text-align: center;
     }
 }
