@@ -315,7 +315,7 @@ class Main extends Component {
                                         </div>
                                         <div className="Main--Buttons">
                                             <button onClick={event => this.onClickHandler(event,"trending")} className="Main--Results">Search</button> 
-                                            <a onClick={event => this.onToggleHandler(event,"reposearch")} className="Main--Results">Repo search</a>
+                                            <a onClick={event => this.onToggleHandler(event,"reposearch")} className="Main--Results">Starred Repos</a>
                                         </div>
 
                                     </div>
