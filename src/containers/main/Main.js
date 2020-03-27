@@ -119,6 +119,7 @@ class Main extends Component {
           { label: "Isabelle", value: "Isabelle" },
           { label: "J", value: "J" },
           { label: "Java", value: "Java" },
+          { label: "Javascript", value: "Javascript" },
           { label: "JSONiq", value: "JSONiq" },
           { label: "Julia", value: "Julia" },
           { label: "Juptyer", value: "Jupyter" },
