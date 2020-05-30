@@ -7,5 +7,13 @@ programming language and also specify the duration.
 You can also search for particular repositories in a certain language. E.g. You can search for all the famous repositories of
 tetris in javascript!
 
-# Deployed: https://gittrends.netlify.com/
+### Deployed: https://gittrends.netlify.com/
 
+### Web View:
+
+<img src="src/img/gitview1.png">
+
+### Mobile View:
+
+<img src="src/img/gitview2.png" width="450">
+<img src="src/img/gitview3.png" width="450">
