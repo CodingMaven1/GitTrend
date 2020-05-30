@@ -15,5 +15,4 @@ tetris in javascript!
 
 ### Mobile View:
 
-<img src="src/img/gitview2.jpg" width="450">
-<img src="src/img/gitview3.jpg" width="450">
+<img src="src/img/gitview2.jpg" width="450">  <img src="src/img/gitview3.jpg" width="450">
