@@ -242,12 +242,12 @@ class Main extends Component {
         if(type === "language"){
             let lang = this.state.language;
             lang = event.target.value;
-            this.setState({language : lang}, () => console.log(this.state.language))
+            this.setState({language : lang})
         }
         else if(type === "reposearch"){
             let reposearch = this.state.reposearch;
             reposearch = event.target.value;
-            this.setState({reposearch: reposearch}, () => console.log(this.state.reposearch))
+            this.setState({reposearch: reposearch})
         }
       }
     
@@ -255,12 +255,12 @@ class Main extends Component {
         if(type === "language"){
           let lang = this.state.language;
           lang = event.value;
-          this.setState({language: lang}, () => console.log(this.state.language))
+          this.setState({language: lang})
         }
         else if(type === "duration"){
           let duration = this.state.duration;
           duration = event.value;
-          this.setState({duration: duration}, () => console.log(this.state.duration))
+          this.setState({duration: duration})
         }
       }
     
